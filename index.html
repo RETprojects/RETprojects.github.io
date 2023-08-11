@@ -1,1 +1,392 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <title>Remi Toutin</title>
+
+    <style>
+        body {margin:0;font-family: 'Helvetica';font-size: 24px;
+            background-color: rgb(5, 17, 43); color:white; text-align: center;}
+
+        a {
+            text-decoration: none;
+        }
+        
+/*--------------------------------------------------------------------*/
+
+        .navbar {
+          overflow: hidden;
+          background-color: #243864;
+          position: fixed;
+          top: 0;
+          width: 100%;
+          z-index: 1000;
+        }
+        
+        .navbar a {
+          float: left; 
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 14px 16px;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        
+        .navbar a:hover {
+          background: #ddd;
+          color: #243864;
+        }
+      
+        /*--------------------------------------------------------------------*/
+
+
+        .main {
+          padding: 16px;
+          margin-top: 30px;
+          height: 1500px; 
+          text-decoration: none;
+        }
+
+        .center {
+           
+            justify-content: center;
+            text-align: center;
+        }
+
+        .heading {
+            text-align: center;
+        }
+
+        .logos {
+            text-align: center;
+        }
+
+        .img__wrap {
+         position: relative;
+        display: inline-block; 
+        text-align: center;
+        
+        }
+
+        .img__img {
+        vertical-align: bottom;
+        border-radius: 10px;
+        }
+
+        .img__description_layer {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #243864;
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        border-radius: 10px;
+       
+        transition: opacity .2s, visibility .2s;
+        }
+
+        .img__wrap:hover .img__description_layer {
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .img__description {
+        transition: .2s;
+        transform: translateY(1em);
+        text-align: center;
+       color:white;
+        }
+
+      
+
+        .img__wrap:hover .img__description {
+        transform: translateY(0);
+        }
+
+        .grid-container {
+        /* display: grid;
+        grid-template-columns: auto; */
+        background-color: #2196F3;
+        padding: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        }
+
+        .grid-item {
+        background-color: none;
+        border:none;
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+        width: 100%;
+        border-radius: 5px;
+        }
+
+        .pics_in_a_row {
+        /*display: flex;*/
+        }
+
+        .img1 { flex: 1.3344; }
+
+        .projects {
+            text-align: center;
+            list-style: none;
+            z-index: -100;
+        }
+
+        ul {
+            list-style: none;
+            z-index: -500;
+        }
+
+        .about {
+           background-color: #808080;
+           color:rgb(5, 17, 43);
+           border-radius: 10px;
+           padding: 40px;
+        }
+
+        input[type=text], select, textarea {
+        width: 800px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+        justify-content: center;
+        }
+
+        input[type=submit] {
+        background-color: rgb(5, 17, 43);
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        }
+
+        input[type=submit]:hover {
+        background-color: rgb(5, 17, 43);
+        }
+
+        div.formstyle {
+        border-radius: 10px;
+        background-color: #808080;
+        padding: 20px;
+        
+        justify-content: center;
+        display: block;
+        text-align: center;
+        }
+
+        form {
+            justify-content: center;
+            display: inline-block;
+        }
+        
+    </style>
+</head>
+
+/*--------------------------------------------------------------------*/
+
+
+
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div class="main" id="home">
+
+        <div class="heading">
+        <h1>Remi Toutin</h1>
+        </div>
+
+        <div class="logos">
+        <a href="https://github.com/RETprojects">
+            <img alt="GitHub" src="github.png"
+            width="29" height="29">
+        </a>
+        </div>
+
+        <br>
+        <br id="about">
+        <div class="about">
+       
+        
+            <div class="heading">
+                
+                <h2>About</h2>
+            
+            </div>
+            
+            <p>I am a student living in Austin, TX, and pursuing a Bachelor's of Science in Software Engineering at Penn State, graduating in 2023.</p>
+
+            <div class="heading">
+                <h3>Topics I'm interested in</h3>
+            </div>
+
+            <p>Machine learning; AI; OOD; Video games; Data visualization</p>
+
+            <div class="heading">
+                <h3>My skills</h3>
+            </div>
+
+            <p><img alt="Python" src="Python.svg.png"
+                width="24" height="24"> Python 
+            <img alt="Java" src="Java-icon.png"
+                width=auto height="24"> Java 
+            <img alt="C" src="C_Logo.png"
+                width=auto height="24"> C 
+            <img alt="C++" src="306px-ISO_C++_Logo.svg.png"
+                width="24" height="24"> C++ 
+            <img alt="C#" src="c.png"
+                width=auto height="24"> C# 
+            <img alt="MIPS Assembly" src="META-INF_pluginIcon.png"
+                width="24" height="24"> MIPS Assembly 
+            <img alt="Swift" src="Swift_logo_color.svg"
+                width="24" height="24"> Swift
+            
+            <br><br>
+            
+            <img alt="SQL/MySQL" src="Misc-Database-3-icon.png"
+                width=auto height="24"> SQL/MySQL
+            
+            <br><br>
+            
+            <img alt="PHP" src="new-php-logo.png"
+                width=auto height="24"> PHP 
+            <img alt="JavaScript" src="600px-JavaScript-logo.png"
+                width="24" height="24"> JavaScript 
+            <img alt="HTML" src="512px-HTML5_logo_and_wordmark.svg.png"
+                width=auto height="24"> HTML 
+            <img alt="CSS" src="CSS3_logo_and_wordmark.svg.png"
+                width=auto height="24"> CSS 
+            <img alt="Angular" src="angular.png"
+                width="24" height="24"> Angular
+            
+            <br><br>
+
+            <img alt="VHDL" src="LED_lamp.svg.png"
+                width="24" height="24"> VHDL</p>
+
+        </div>
+            <br id="projects">
+        
+        <div class="heading">
+            <h2>Projects</h2>
+        </div>
+        
+     
+        <div class="projects">
+            <ul>
+                <li><div class="grid-item"><a href="https://hdfs-internship-db.herokuapp.com/">
+                    <div class="img__wrap">
+                        <img class="img__img" src="HDFS_DB_Cropped.png" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Penn State HDFS Internship Database:&nbsp;</h3>
+                            <p class="img__description">built a MySQL database and a website to interact with it during an internship</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/RETprojects/MusicInfoApp">
+                    <div class="img__wrap">
+                        <img class="img__img" src="MusicInfoUI - Copy.png" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Music Info App:&nbsp;</h3>
+                            <p class="img__description">a Python app using the Deezer API</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/RETprojects/HuntTheWumpusMIPS">
+                    <div class="img__wrap">
+                        <img class="img__img" src="HuntTheWumpus - Copy.png" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Hunt the Wumpus:&nbsp;</h3>
+                            <p class="img__description">a MIPS assembly version of a text-based adventure game</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/RETprojects/tmbgapi">
+                    <div class="img__wrap">
+                        <img class="img__img" src="TMBWShows - Copy.png" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">TMBG API:&nbsp;</h3>
+                            <p class="img__description">a Python API that scrapes a band's wiki</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/RETprojects/tetris">
+                    <div class="img__wrap">
+                        <img class="img__img" src="tetrisplay - Copy.png" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Tetris:&nbsp;</h3>
+                            <p class="img__description">a Java implementation of a classic game</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/RETprojects/dog-classifier">
+                    <div class="img__wrap">
+                        <img class="img__img" src="dognames - Copy.jpg" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Dog Classifier:&nbsp;</h3>
+                            <p class="img__description">a Python-based neural network that identifies the dog breed shown in an image</p>
+                        </div>
+                    </div>
+                </a></div></li>
+                <li><div class="grid-item"><a href="https://github.com/neha26pp/website.io">
+                    <div class="img__wrap">
+                        <img class="img__img" src="SDOWCHome - Copy.jpg" width="800"/>
+                        <div class="img__description_layer">
+                            <h3 class="img__description">Penn State SDOWC Website:&nbsp;</h3>
+                            <p class="img__description">contributions to the Home, About, and Calendar pages</p>
+                        </div>
+                    </div>
+                </a></div></li>
+            </ul>
+        </div>
+
+        <br>
+        <br>
+       
+        <br id="contact">
+
+        <div class="formstyle">
+            <h2>Contact</h2>
+            <p>Let's get in touch!</p>
+        
+            <form action="mailto:rmt5532@psu.edu"> <!-- TODO: Change to Neha's email address -->
+              <label for="name">Name</label><br>
+              <input type="text" id="name" name="name" placeholder="Your name">
+          <br>
+              <label for="email">Email Address</label><br>
+              <!--<input type="email" id="email" name="email" placeholder="Your email address">-->
+              <input type="text" id="email" name="email" placeholder="Your email address">
+          <br>
+              <label for="subject">Subject</label><br>
+              <textarea id="subject" name="subject" placeholder="Write something..." style="height:200px"></textarea>
+              <br>
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
