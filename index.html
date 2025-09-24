@@ -73,12 +73,20 @@
         text-align: center;
         /* width: 800px; */
         max-width: 90vw;
+
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
         .img__img {
         vertical-align: bottom;
         border-radius: 10px;
         object-fit: contain;
+
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
         .img__description_layer {
@@ -98,24 +106,40 @@
         border-radius: 10px;
        
         transition: opacity .2s, visibility .2s;
+
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
         .img__wrap:hover .img__description_layer {
         visibility: visible;
         opacity: 1;
+
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
         .img__description {
         transition: .2s;
         transform: translateY(1em);
         text-align: center;
-       color:white;
+        color:white;
+        
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
       
 
         .img__wrap:hover .img__description {
         transform: translateY(0);
+
+        max-width: 100%;
+        height: auto;
+        width: auto\9;
         }
 
         .grid-container {
@@ -148,7 +172,9 @@
             text-align: center;
             list-style: none;
             z-index: -100;
-            /* width: 100%; */
+            width: 100%;
+            /* border-radius: 10px; */
+            /* padding: 40px; */
         }
 
         ul {
@@ -316,6 +342,7 @@
                     </div>
                 </a></div></li>
                 <li><div class="grid-item"><a href="https://github.com/dev-launchers/dev-launchers-platform">
+                <!-- <li><div class="grid-item"><a href="https://devlaunchers.org/ideaspace/browse"></a> -->
                     <div class="img__wrap">
                         <img class="img__img" src="DevLaunchersCommentFeed.png" width="800"/>
                         <div class="img__description_layer">
